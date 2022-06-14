@@ -1,1 +1,2 @@
-# web_snake
+# snake
+simple HTML5 canvas game
