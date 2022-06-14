@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="game">
+        <div id="header">
+            <div id="settings">
+                <div class="row">speed:</div>
+                <select class="row" name="speed" id="speed-input">
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option selected value="14">14</option>
+                    <option value="16">16</option>
+                    <option value="18">18</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                </select>
+                <div class="row">walls:</div>
+                <input class="row" id="walls" type="checkbox">
+                <div class="row">size:</div>
+                <select class="row" name="size" id="size">
+                    <option value="1">1</option>
+                    <option selected value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <button class="row" id="btn-update">update</button>
+                <div class="clearfloat"></div>
+            </div>
+            <div class="row-right">
+                <div class="row">length:</div>
+                <div class="row" id="length"></div>
+                <div class="clearfloat"></div>
+            </div>
+            <div class="clearfloat"></div>
+        </div>
+        <canvas id="canvas" width=800 height=600></canvas>
+    </div>
+
+    <script src="js/snake.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
